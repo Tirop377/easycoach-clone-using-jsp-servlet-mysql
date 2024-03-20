@@ -1,0 +1,486 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    position: relative;
+    background-color: #F2F2F2;
+
+}
+
+.main-nav{
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+}
+
+.right-side-nav{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+}
+
+.right-side-nav .links{
+    width: 70%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+.links a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    transition: all 0.3s;
+}
+
+.links a:hover{
+    color: blueviolet;
+}
+
+.login-btn, .signup-btn{
+    width: 250px;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-weight: 500;
+    text-decoration: none;
+}
+.login-btn{
+    color: white;
+    background-color: black;
+}
+
+.login-btn:hover{
+     background-color: #B5151A;    
+}
+
+.signup-btn{
+   border: 1px solid black;
+}
+
+.signup-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.user-icon{
+    border: 4px solid rgba(0, 255, 255, 0.774);
+    margin-right: 10px;
+    padding: 10px 10px;
+    border-radius: 50%;
+    color: rgb(77, 160, 77);
+    font-size: 22px;
+    transition: opacity 0.5s;
+    position: relative;
+}
+.tooltip{
+    position: absolute;
+    left: -15px;
+    bottom: -30px;
+    font-size: 14px;
+    padding: 2px 5px;
+    background: #ffdb123f;
+    border-radius: 5px;
+    z-index: 1;
+    color: gray;
+    visibility: hidden; 
+    white-space: nowrap;
+    transition: all 0.5s;
+}
+
+.user-icon:hover .tooltip{
+    visibility: visible;
+}
+.logOut-btn{
+    padding: 13px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: rgba(0, 255, 255, 0.356);
+    transition: all 0.5s;
+}
+
+.logOut-btn:hover{
+    background-color: aqua;
+}
+
+
+.progress-bar-container{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #FFFFFF;
+    position: relative;
+    margin-top: -25px;
+}
+
+.circle{
+    width: 40px;
+    height: 40px;
+    top: -20px;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+    position: absolute;
+    background-color: #FFFFFF;
+    left: -2px;
+}
+
+.progress-bar div{
+    position: relative;
+}
+
+.progress-bar .span{
+    position: absolute;
+    top: 25px;
+    left: -8px;
+    width: 200px;
+}
+
+.progress-bar .completed{
+    background-color: rgb(10, 196, 10);
+}
+
+.inprogress{
+    border-color: #B5151A;
+}
+
+
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    
+}
+.first-container{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-container form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.details-form{
+    background-color: #FFFFFF;
+    padding: 10px 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.details-form .heading{
+    border-bottom: 1px solid rgba(168, 163, 163, 0.432);
+    padding-bottom: 20px;
+    margin: 20px 0;
+}
+.details-form .heading h1{
+    margin-bottom: 10px;
+}
+.heading a{
+    text-decoration: none;
+    color: #e61118;
+}
+
+.inputs-grid .input2-container{
+    width: 350px;
+    height: 60px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.input2-container input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-left: 40px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid rgba(168, 163, 163, 0.432);
+}
+
+.input2-container .icon{
+    position: absolute;
+    top: 35%;
+    left: 10px; 
+    font-size: 19px;
+}
+
+.inputs-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    padding-bottom: 20px;
+}
+
+.inputs-grid h3{
+    margin-top: 50px;
+    margin-left: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.inputs-grid h3 span{
+	color:rgba(83, 77, 77, 0.781);
+}
+
+
+
+.payment{
+    background-color: #FFFFFF;
+    padding: 15px;
+    width: 100%;
+    margin: 40px 0;
+    border-radius: 5px;
+}
+
+
+
+.medium-fontSize{
+    font-size: 19px;
+
+}
+
+.payment h2{
+    border-bottom: 1px solid rgba(168, 163, 163, 0.432);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.sms-contact{
+    position: relative;
+    width: 350px;
+    height: 60px;
+    margin: 17px 0;
+}
+
+.sms-contact input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 43px;
+    border: 1px solid rgba(168, 163, 163, 0.432);
+    border-radius: 5px; 
+    font-size: 20px;
+    
+}
+
+.sms-contact .icon{
+    position: absolute;
+    top: 18px;
+    left: 10px;
+    font-size: 27px;
+}
+
+.payment .checkbox{
+    margin: 20px 0;
+    padding-left: 5px;
+}
+
+.checkbox input{
+    transform: scale(1.4);
+    margin-right: 8px;
+}
+
+.payment button{
+    width: 200px;
+    gap: 5px;
+    font-size: 18px;
+    background-color: #01040a;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 3px;
+    transition: all 0.4s;
+}
+
+.payment button:hover{
+    transform: scale(1.1);
+}
+
+.second-container .order-details{
+    width: 33%;
+    height: 120vh;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 25px 10px;
+}
+
+
+.order-details h1{
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(168, 163, 163, 0.432);
+    margin-bottom: 10px;
+}
+
+.order-details div{
+    margin: 25px 0;
+    font-size: 17px;
+    border-bottom: 1px solid rgba(168, 163, 163, 0.432);
+    padding: 10px;
+}
+
+.order-details h2{
+    margin-top: 20px;
+}
+
+.order-details div .time{
+    color: gray;
+}
+
+.order-details div ion-icon{
+    margin-right: 10px;
+    
+}
+
+.order-details p{
+    margin: 20px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.lastSection-continer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.second{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.contacts, .Payment, .policy{
+    display: flex;
+    width: 40%;
+    cursor: pointer;
+}
+
+.second .icon{
+    min-width:70px;
+    height: 70px;
+    font-size: 40px;
+    background-color: #DDEFEA;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    transition: all 0.3s;
+}
+
+.second .icon:hover{
+    transform: scale(1.2);
+}
+
+.text{
+    font-size: 15px;
+}
+
+.text p{
+    color: gray;
+    margin-top: 10px;
+}
+
+.red-bar{
+    width: 100%;
+    height: 8vh;
+    background-color: #B5151A;
+    text-align: center;
+    padding-top: 8px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    border-radius: 4px;
+}
+
+footer{
+    width: 100%;
+}
+
+.container-in-footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.2fr 1fr 1.5fr;
+}
+
+.container-in-footer .logo{
+ padding-left: 70px;
+ padding-top: 80px;
+}
+
+.container-in-footer ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;  
+}
+
+.container-in-footer a{
+    color: black;
+    text-decoration: none;
+}
+
+.social-apps a{
+    font-size: 30px;
+    margin: 20px;
+    color: blueviolet;
+}
+
+.copyright-bar{
+    width: 100%;
+    height: 8vh;
+    background: #051949;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: gray;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.copyright-bar span{
+    color: #FFFFFF;
+    font-weight: 500;
+}

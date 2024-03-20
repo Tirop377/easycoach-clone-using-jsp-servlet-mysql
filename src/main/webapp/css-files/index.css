@@ -1,0 +1,472 @@
+@charset "ISO-8859-1";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box ;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+
+}
+
+.main-nav{
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right-side-nav{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+}
+
+.right-side-nav .links{
+    width: 70%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+.links a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    transition: all 0.3s;
+}
+
+.links a:hover{
+    color: blueviolet;
+}
+
+
+.login-btn, .signup-btn{
+    width: 250px;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-weight: 500;
+    text-decoration: none;
+}
+.login-btn{
+    color: white;
+    background-color: black;
+}
+
+.login-btn:hover{
+     background-color: #B5151A;    
+}
+
+.signup-btn{
+   border: 1px solid black;
+}
+
+.signup-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.user-icon{
+    border: 4px solid rgba(0, 255, 255, 0.774);
+    margin-right: 10px;
+    padding: 10px 10px;
+    border-radius: 50%;
+    color: rgb(77, 160, 77);
+    font-size: 22px;
+    transition: opacity 0.5s;
+    position: relative;
+}
+.tooltip{
+    position: absolute;
+    left: -15px;
+    bottom: -30px;
+    font-size: 14px;
+    padding: 2px 5px;
+    background: #ffdb123f;
+    border-radius: 5px;
+    z-index: 1;
+    color: gray;
+    visibility: hidden; 
+    white-space: nowrap;
+    transition: all 0.5s;
+}
+
+.user-icon:hover .tooltip{
+    visibility: visible;
+}
+.logOut-btn{
+    padding: 13px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: rgba(0, 255, 255, 0.356);
+    transition: all 0.5s;
+}
+
+.logOut-btn:hover{
+    background-color: aqua;
+}
+
+.main{
+    background-color: #FFFFFF;
+}
+
+.large-image-background{
+    height: 80vh;
+    max-height: 100%;
+    background-image: url(../images/first-Image.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.85;
+}
+
+.middle-section{
+    width: 100%;
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.booking-section{
+    width: 85%;
+    padding: 20px 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+    position: relative;
+    box-shadow: 5px 5px 5px 5px gainsboro;
+    margin-bottom: 20px;
+}
+
+.booking-section::before{
+    width: 280px;
+    height: 50px;
+    background-color: #ece5e5fa;
+    content: 'Experience Dignity';
+    padding-top: 8px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: black;
+    position: absolute;
+    left: 0;
+    top: -70px;
+
+}
+.radio-btn{
+ position: absolute;
+ top: 20px;
+ left: 20px;
+}
+
+
+.input{
+    width: 300px;
+    height: 130px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.inputBox{
+    height: 60px;
+    font-size: 16px;
+}
+
+.booking-section button{
+     height: 60px;
+     width: 180px;
+     border-radius: 10px;
+     background-color: black;
+     font-size: 18px;
+     font-weight: 500;
+     color: #FFFFFF;
+     border: none;
+     margin-top: 71px;
+     margin-left: 8px;
+     transition: all 0.5s;
+}
+.booking-section button:hover{
+    background-color: #B5151A;
+}
+
+.depature-time-input{
+    margin-left: 5px;
+}
+
+.long-image{
+    height: 200px;
+    width: 85%;
+    background-image: url(../images/long-image.png);
+}
+
+.more-info{
+    width: 85%;
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.more-info div{
+    width: 30%;
+    text-align: center;
+}
+
+.more-info .icon{
+    font-size: 37px;
+    color: rgb(194, 8, 8);
+    transition: all 0.5s;
+
+}
+.more-info .icon:hover{
+    color: black;
+    transform: scale(1.1);
+}
+
+.more-info h2, p{
+    font-size: 16px;
+}
+
+.top-destinations{
+    width: 100%;
+    background-color: #ece5e5;
+    padding-top: 50px;
+    display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+.top-destinations h1{
+    font-size: 35px;
+}
+
+.top-destinations .container{
+    width: 85%;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 370px 370px 370px;
+    justify-content: space-between;
+}
+
+.card{
+    height: 350px;
+    width: 370px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card .image-container{
+    height: 74%;
+    width: 100%;
+    position: relative;
+}
+
+.card .image-container img{
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card .image-container span{
+    height: 30px;
+    width: 80px;
+    background-color: #B5151A;
+    border-radius: 10px;
+    top: -12px;
+    left: 20px;
+    position: absolute;
+    text-align: center;
+    padding-top: 5px;
+    color: #FFFFFF;
+}
+
+.card h2{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.second-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #ece5e5;
+}
+
+.second-long-image{
+    color: #FFFFFF;
+    width: 85%;
+    height: 300px;
+    font-size: 25px;
+    padding-left: 50px;
+    border-radius: 5px;
+    background-image: url(../images/second-long-image.jpg);
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: transform 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.second-long-image:hover{
+    transform: translateY(-4px);
+}
+
+.awards{
+    margin-top: 30px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.awards div{
+    width: 22%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+
+.comments-container{
+    width: 85%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.comment{
+    width: 35%;
+}
+
+.comment p{
+    color: gray;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    word-spacing: 1px;
+    padding: 5px;
+}
+
+.comment h2{
+    color: rgb(156, 5, 5);
+}
+
+.comment h3{
+    color: gray;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+
+.ratings{
+    list-style-type: none;
+    display: flex;
+     margin-top: 6px;
+}
+
+.star-icon{
+    color: #FFDC12;
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+.red-bar{
+    width: 100%;
+    height: 8vh;
+    background-color: #B5151A;
+    text-align: center;
+    padding-top: 8px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+footer{
+    width: 100%;
+}
+
+.container-in-footer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.2fr 1fr 1.5fr;
+}
+
+.container-in-footer .logo{
+ padding-left: 70px;
+ padding-top: 80px;
+}
+
+.container-in-footer ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 15px;  
+}
+
+.container-in-footer a{
+    color: black;
+    text-decoration: none;
+}
+
+.social-apps a{
+    font-size: 30px;
+    margin: 20px;
+    color: blueviolet;
+
+}
+.copyright-bar{
+    width: 100%;
+    height: 8vh;
+    background: #051949;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: gray;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.copyright-bar span{
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
